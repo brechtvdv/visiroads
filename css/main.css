@@ -4,7 +4,312 @@
 	Version: 0.0.1
 */
 /* BASE - Base styles, variables, mixins, etc */
+/* Font colors */
+/* Background colors */
+/* Showcase Area */
+/* Mixins */
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+}
+
+.page-header {
+  margin-top: 30px;
+}
+
+.no-pad-top {
+  padding-top: 0;
+}
+
+body {
+  font-family: "Segoe UI", "Segoe WP", "Segoe Regular", sans-serif;
+  font-size: 15px;
+  line-height: 1.7em;
+  color: #666666;
+}
+
+a {
+  color: #00aff0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+input, textarea, button {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+img.device {
+  width: 100%;
+}
+
 /* MODULES - Individual site components */
+/* Blocks */
+.block, .block-primary, .block-secundary, .block-light, .block-dark {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.block h3, .block-primary h3, .block-secundary h3, .block-light h3, .block-dark h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.block-primary {
+  background: #00aff0;
+  color: #ffffff;
+  /* white */
+}
+
+.block-secundary {
+  background: #7fba00;
+  color: #ffffff;
+  /* white */
+}
+
+.block-light {
+  background: #e4eef2;
+  color: #666666;
+  /* dark gray */
+}
+
+.block-dark {
+  background: #2b5464;
+  color: #ffffff;
+  /* white */
+}
+
+.block-center {
+  text-align: center !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #00aff0;
+  color: #ffffff;
+  /* white */
+  border: 2px solid #ffffff;
+}
+
+/* Sections */
+section {
+  padding: 30px 0;
+}
+
+.section-showcase {
+  height: 400px;
+  background: url("../img/showcase-mountainroad.jpg") no-repeat top center;
+}
+.section-showcase .showcase-content {
+  padding: 110px 15px;
+  text-align: center;
+}
+.section-showcase h1 {
+  color: #00aff0;
+  font-size: 60px;
+}
+.section-showcase p {
+  color: #fff;
+}
+
+.section-primary {
+  background: #00aff0;
+  color: #ffffff;
+  /* white */
+}
+
+.section-secundary {
+  background: #7fba00;
+  color: #ffffff;
+  /* white */
+}
+
+.section-light {
+  background: #e4eef2;
+  color: #666666;
+  /* dark gray */
+}
+
+.section-dark {
+  background: #2b5464;
+  color: #ffffff;
+  /* white */
+}
+
+.section-primary-a {
+  margin-top: 60px;
+}
+
+/* Components */
+#map {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+}
+
+/* Lists */
+.list, .list-feature {
+  margin-bottom: 30px;
+}
+
+.list-feature {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+.list-feature li {
+  line-height: 3.5em;
+  border-bottom: 1px solid #cccccc;
+}
+.list-feature li:last-child {
+  border: 0;
+}
+.list-feature span {
+  vertical-align: top;
+  padding-top: 12px;
+  font-size: 120%;
+}
+.list-feature i {
+  margin-top: -9px;
+  margin-right: 5px;
+}
+
+/* Icons */
+.fa-2 {
+  font-size: 18px;
+}
+
+.fa-3 {
+  font-size: 24px;
+}
+
+.fa-4 {
+  font-size: 27px;
+}
+
+.fa-5 {
+  font-size: 35px;
+}
+
+.fa-6 {
+  font-size: 40px;
+}
+
+.fa-primary {
+  color: #00aff0;
+}
+
+.fa-border {
+  border: 1px solid #00aff0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 13px 15px;
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+/* Headings */
+.heading-primary {
+  color: #00aff0;
+}
+
+.heading-secundary {
+  color: #7fba00;
+}
+
+.heading-light {
+  color: #e4eef2;
+}
+
+.heading-dark {
+  color: #2b5464;
+}
+
+/* Searchbox */
+.search {
+  width: 100%;
+  /* whole width of column */
+}
+.search h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.search input[type="search"] {
+  border: 0;
+  height: 50px;
+  width: 80%;
+  border: 2px solid #00aff0;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+.search button {
+  border: 0;
+  background: none;
+  padding: 0;
+  vertical-align: top;
+  margin-left: -5px;
+}
+
+form {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .search {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .device {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 120px;
+    height: 120px;
+  }
+
+  .device-small {
+    margin-bottom: 20px !important;
+  }
+
+  .footer-main ul {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .footer-main h4 {
+    text-align: center;
+  }
+}
 /* LAYOUTS - Page layout styles */
+/* Navbar */
+.navbar {
+  width: 90%;
+  margin: auto;
+  border-right: 1px solid #e7e7e7;
+  border-left: 1px solid #e7e7e7;
+  border-color: #e7e7e7;
+  min-height: 60px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+.navbar a {
+  color: #00aff0 !important;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  padding-bottom: 24px;
+  padding-top: 20px !important;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #00aff0 !important;
+  color: #fff !important;
+}
+
+/* Footer */
+.footer-main {
+  margin-top: 20px;
+}
 
 /*# sourceMappingURL=main.css.map */

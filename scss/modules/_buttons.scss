@@ -1,0 +1,6 @@
+/* Buttons */
+
+.btn-primary{
+	@include add-background($primary-color);
+	@include add-border(2px, #ffffff, all);
+}
