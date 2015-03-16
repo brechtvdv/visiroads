@@ -1,5 +1,24 @@
 /* Footer */
 
 .footer-main{
-	margin-top: 20px;	
+	margin-top: 0px;	
+	@include add-background($dark-color);
+	@include add-border(5px, $secundary-color, top);
+	min-height: 200px;
+	padding: 30px 0;
+	z-index: 100;
+
+	a{
+		color: #ffffff;
+	}
+
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	li{
+		line-height: 1.8em;
+		list-style: none;
+	}
 }
